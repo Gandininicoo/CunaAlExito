@@ -22,6 +22,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/page.jsx", "app/page.jsx", "app/components/header.jsx", "app/components/menu-desplegable.jsx", "app/components/jugadores/[ID]/page.jsx", "app/components/jugadores/page.jsx"],
   "exclude": ["node_modules"]
 }

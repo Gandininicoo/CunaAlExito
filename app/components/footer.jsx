@@ -12,7 +12,7 @@ export default function Footer() {
                 <span>+54 (3465) 65-6192</span>
             </a>
             <a className="header--custom-text" itemprop="email" href="mailto:" rel="nofollow">
-                <span>mail@gmail.com</span>
+                <span></span>
             </a>
             </section>
         </footer>

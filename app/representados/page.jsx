@@ -9,7 +9,12 @@ async function fetchJugadores() {
   }
 export default async function Jugadores(){
     let jugadores = await fetchJugadores()
-    jugadores.map(jugador =>(
+    return(
+        <article className={styles.body}>
+            {jugadores.map(jugador =>(
                 <Card key={jugador.ID} escudo={jugador.imgclub} jugadorid={jugador.ID} imghref={jugador.imgprofile} jugadornombre={jugador.nombre} jugadorapellido={jugador.apellido}/>
-    ))}
-Jugadores()
+            ))}
+            <Card key='pedro-aguirrez' jugadorid='pedro-aguirrez' escudo='../data/silbato.png' imghref='../data/aguirrez.png' jugadornombre='Pedro' jugadorapellido='Aguirrez'/>
+        </article>
+    )
+}

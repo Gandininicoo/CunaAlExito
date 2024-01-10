@@ -32,7 +32,7 @@ export default async function Home() {
         <Link  href='/academias' ><div style={{ backgroundImage: `url(../academia2.png)`}}><p>ACADEMIAS</p></div></Link>
       </article>
       <article className={styles.academiasHome}>
-        <img src="../flyer-inscripciones.jpg" alt="Flyers Inscripciones Abiertas" className={styles.flyer} />
+        <img src="../flyer-Inscripciones.jpg" alt="Flyers Inscripciones Abiertas" className={styles.flyer} />
         <Link className={styles.vermas} href={`https://wa.me/5403465656192?text=Hola Angel me comunico para realizarle una consulta sobre las inscripciones...`}>INSCRIBITE</Link>
       </article>
     </div>

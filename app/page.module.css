@@ -48,9 +48,10 @@
     text-align: center;
     border-radius: 20px;
 }
-.jugadoresHome .vermas{
+.vermas{
     display: inline;
     width: 70%;
+    max-height: 1em;
     margin-bottom: 20px;
     font-size: 1.5rem;
     padding: 20px;
@@ -79,6 +80,9 @@
     width: 100%;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+.flyer{
+    max-width: 95%;
 }
 .academiasHome a{
     display: flex;
@@ -125,6 +129,10 @@
     }
     .academiasHome a{
         width: 45%;
+    }
+    .flyer{
+        max-width: 85%;
+        border-radius: 30px;
     }
 }
 

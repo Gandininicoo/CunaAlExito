@@ -15,6 +15,7 @@ export default async function Jugadores(){
                 <Card key={jugador.ID} escudo={jugador.imgclub} jugadorid={jugador.ID} imghref={jugador.imgprofile} jugadornombre={jugador.nombre} jugadorapellido={jugador.apellido}/>
             ))}
             <Card key='pedro-aguirrez' jugadorid='pedro-aguirrez' escudo='../data/silbato.png' imghref='../data/aguirrez.png' jugadornombre='Pedro' jugadorapellido='Aguirrez'/>
+            <Card key='fabian-barrientos' jugadorid='fabian-barrientos' escudo='../data/silbato.png' imghref='../data/barrientos.png' jugadornombre='N. Fabian' jugadorapellido='Barrientos'/>
         </article>
     )
 }

@@ -10,11 +10,11 @@ export default async function Jugador({ params }) {
             <div className={styles.card}>
                 <h1 className={styles.name}>Norberto Fabian Barrientos</h1>
                 <img className={styles.profileimg} src={`../data/barrientos.png`} alt='Fabian Barrientos' />
-                <img className={styles.escudo} src={`../data/coronelaguirre.png`} alt='Coronel Aguirre' />
+                <img className={styles.escudo} src={`../data/boca-serodino.png`} alt='Coronel Aguirre' />
                 <table className={styles.tabladatos}>
                     <tr><th>EDAD</th><td>53 años</td></tr>
                     <tr><th>PAIS</th><td>Argentino</td></tr> 
-                    <tr><th>CLUB</th><td>Coronel Aguirre</td></tr>
+                    <tr><th>CLUB</th><td>Boca de Serodino</td></tr>
                 </table>
                 <table className={styles.tabladatos2}>
                     <tr><th>Carrera</th></tr>
@@ -25,6 +25,7 @@ export default async function Jugador({ params }) {
                     <tr><td>CORONEL AGUIRRE (2011)</td></tr>
                     <tr><td>COACHING DE JUGADORES (2012-2018)</td></tr>
                     <tr><td>CORONEL AGUIRRE (2023)</td></tr>
+                    <tr><td>BOCA DE SERODINO(2024)</td></tr>
                 </table>
             </div>
             <a className={styles.descargarcv} href="../cv-barrientos.pdf" download> Descargar Curriculum</a>

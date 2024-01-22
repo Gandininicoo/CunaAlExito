@@ -14,7 +14,7 @@ export default async function Jugador({ params }) {
                 <table className={styles.tabladatos}>
                     <tr><th>EDAD</th><td>53 años</td></tr>
                     <tr><th>PAIS</th><td>Argentino</td></tr> 
-                    <tr><th>CLUB</th><td>Casilda Club</td></tr>
+                    <tr><th>CLUB</th><td>Coronel Aguirre</td></tr>
                 </table>
                 <table className={styles.tabladatos2}>
                     <tr><th>Carrera</th></tr>

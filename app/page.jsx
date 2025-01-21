@@ -3,7 +3,7 @@ import styles from './page.module.css'
 import Card from "./components/card"
 import Link from 'next/link'
 async function fetchJugadoreshome() {
-  const res = await fetch('https://script.google.com/macros/s/AKfycbwD_l76Uxrm_Pir8op4O_oTrXVJBg5KvUo-PGnLkQPBk9fzneoJEbHI4MsjSOaXZtY/exec', { cache: 'no-store' },{"method":"GET"})
+  const res = await fetch('https://script.google.com/macros/s/AKfycbzf7Ga_N4Bx-USB3hkGgiyOg40iBMS3uEZDG6V6KQcO_Hjy-Y17iTeVWJLYoFJVTKg/exec', { cache: 'no-store' },{"method":"GET"})
   if (!res.ok) {
     throw new Error('Failed to fetch data')
   }

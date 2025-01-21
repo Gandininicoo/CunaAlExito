@@ -2,12 +2,14 @@
 import styles from './page.module.css'
 import Card from "./components/card"
 import Link from 'next/link'
+import fsPromises from 'fs/promises';
+import path from 'path'
+
 async function fetchJugadoreshome() {
-  const res = await fetch('https://script.google.com/macros/s/AKfycbzZEOUDz65wZBbWLNo74Z7DT5_fZhyqQvH_TJPJVNV3KeaYGlTL3imsX9DLH-rjZDo/exec', { cache: 'no-store' },{"method":"GET"})
-  if (!res.ok) {
-    throw new Error('Failed to fetch data')
-  }
-  return res.json()
+  const filePath = path.join(process.cwd(), 'app/jugadores.json')
+      const jsonData = await fsPromises.readFile(filePath);
+      const objectData = JSON.parse(jsonData);
+      return objectData
 }
 
 export default async function Home() {

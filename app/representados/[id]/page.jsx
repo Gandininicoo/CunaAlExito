@@ -1,10 +1,12 @@
-async function fetchJugadorUnico() {
-    const res = await fetch('https://script.google.com/macros/s/AKfycbzZEOUDz65wZBbWLNo74Z7DT5_fZhyqQvH_TJPJVNV3KeaYGlTL3imsX9DLH-rjZDo/exec', { cache: 'no-store' }, { "method": "GET" })
-    if (!res.ok) {
-        throw new Error('Failed to fetch data')
-    }
-    return res.json()
-}
+import fsPromises from 'fs/promises';
+import path from 'path'
+import Link from 'next/link'
+async function fetchJugadorUnico() { 
+    const filePath = path.join(process.cwd(), 'app/jugadores.json')
+    const jsonData = await fsPromises.readFile(filePath);
+    const objectData = JSON.parse(jsonData);
+    return objectData
+  }
 import styles from "./jugador.module.css"
 
 export default async function Jugador({ params }) {

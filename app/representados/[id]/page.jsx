@@ -1,5 +1,5 @@
 async function fetchJugadorUnico() {
-    const res = await fetch('https://script.google.com/macros/s/AKfycbwD_l76Uxrm_Pir8op4O_oTrXVJBg5KvUo-PGnLkQPBk9fzneoJEbHI4MsjSOaXZtY/exec', { cache: 'no-store' }, { "method": "GET" })
+    const res = await fetch('https://script.google.com/macros/s/AKfycbzZEOUDz65wZBbWLNo74Z7DT5_fZhyqQvH_TJPJVNV3KeaYGlTL3imsX9DLH-rjZDo/exec', { cache: 'no-store' }, { "method": "GET" })
     if (!res.ok) {
         throw new Error('Failed to fetch data')
     }
